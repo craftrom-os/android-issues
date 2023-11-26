@@ -1,3 +1,9 @@
+description: Create a bug report
+name: Bug Report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
 body:
   - attributes:
       value: "What not to report:
@@ -24,6 +30,7 @@ body:
 
         "
       label: Build Date
+      placeholder: CraftRomOS_onclite-13.0-20231126-0409-OFFICIAL
     type: input
     validations:
       required: true
@@ -79,5 +86,11 @@ body:
         Before posting the issue go through the steps you've written down to make
         sure the steps provided are detailed and clear.
     type: markdown
-description: Create a bug report
-name: Bug Report
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms and rules
+      description: By submitting this issue, you agree to follow our [Terms and rules](https://www.craft-rom.pp.ua/legal/)
+      options:
+        - label: I agree to follow this project's Terms and rules
+          required: true
