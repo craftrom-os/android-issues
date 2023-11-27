@@ -48,7 +48,7 @@ body:
       multiple: false
       options:
         - Select one
-        - 13
+        - thrall
     type: dropdown
     validations:
       required: true
